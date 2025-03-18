@@ -10,5 +10,9 @@ def hola_mundo():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/listar_notas')
+def listar_notas():
+    return render_template('listar_notas.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
